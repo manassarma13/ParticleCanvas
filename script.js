@@ -27,6 +27,9 @@ canvas.addEventListener("click", (event) => {
 canvas.addEventListener("mousemove", (event)=>{
     mouse.x = event.x;
     mouse.y = event.y;
+    for (let i = 0; i < 10; i++) {
+        particleArray.push(new Particle());
+    }
 })
 
 
@@ -49,7 +52,7 @@ class Particle {
     }
 
     draw(){
-        ctx.fillStyle = "#b20000";
+        ctx.fillStyle = "#ffff5c";
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
