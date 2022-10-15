@@ -27,7 +27,7 @@ canvas.addEventListener("click", (event) => {
 canvas.addEventListener("mousemove", (event)=>{
     mouse.x = event.x;
     mouse.y = event.y;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 2; i++) {
         particleArray.push(new Particle());
     }
 })
